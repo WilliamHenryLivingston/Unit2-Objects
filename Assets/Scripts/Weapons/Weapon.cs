@@ -1,15 +1,23 @@
 using UnityEngine;
 
-public abstract class Weapon 
+public abstract class Weapon : ScriptableObject
 {
 
-    protected float damage;
-    protected int ammo;
-    protected float fireRate;
+    [SerializeField] protected float damage;
+    [SerializeField] protected int ammo;
+    [SerializeField] protected float fireRate;
 
-    protected Transform weaponTip;
-    
-    public abstract void Shoot();
+    public void StartShooting()
+    {
+
+    }
+
+    public void StopShooting()
+    {
+
+
+    }
+    public abstract void Shoot(Transform weaponTip);
 
     public abstract void Reload();
 
@@ -18,8 +26,5 @@ public abstract class Weapon
         return ammo > 0;
     }
 
-    public Weapon(Transform tip)
-    {
-        weaponTip = tip;
-    }
+
 }

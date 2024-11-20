@@ -9,13 +9,16 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Enemy enemyPrefab;
     [SerializeField] private Transform[] spawnPointsArray;
     [SerializeField] private List<Enemy> listOfAllEnemiesAlive;
+
+    private ScoreManager scoreManager;
+
     void Start()
     {
         if (instance == null)
             instance = this;
         else
             Destroy(gameObject);
-
+        scoreManager = GetComponent<ScoreManager>();
         StartCoroutine(SpawnWaveOfEnemies());
         SpawnEnemy();
     }
@@ -33,7 +36,7 @@ public class GameManager : MonoBehaviour
 
     public void RemoveEnemyFromList(Enemy enemyToBeRemoved)
     {
-
+        scoreManager.IncreaseScore(ScoreType.EnemyKilled);
         listOfAllEnemiesAlive.Remove(enemyToBeRemoved);
 
         /*
@@ -51,9 +54,9 @@ public class GameManager : MonoBehaviour
     private IEnumerator SpawnWaveOfEnemies()
     {
         //do something here
-        while(true) //enemies are less than 20
+        while(true) 
         {
-            if(listOfAllEnemiesAlive.Count < 20)
+            if(listOfAllEnemiesAlive.Count < 20)//enemies are less than 20
             {
                 Enemy clone = SpawnEnemy();
                 //yield return new WaitForEndOfFrame();
