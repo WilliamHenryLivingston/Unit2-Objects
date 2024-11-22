@@ -23,5 +23,9 @@ public class UIManager : MonoBehaviour
     private void Start()
     {
         FindObjectOfType<ScoreManager>().OnScoreChanged.AddListener(UpdateScoreValue);
+       
+        Player playerObject = FindObjectOfType<Player>();
+        playerObject.healthValue.OnHealthChanged.AddListener(UpdateHealthValue);
+        UpdateHealthValue(playerObject.healthValue.GetHealthValue());
     }
 }
