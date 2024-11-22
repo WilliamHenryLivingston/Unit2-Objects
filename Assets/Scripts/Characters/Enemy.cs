@@ -2,17 +2,16 @@ using UnityEngine;
 
 public class Enemy : Character
 {
-    [SerializeField] private float distanceToStop = 2f;
+    [SerializeField] public float distanceToStop = 2f;
     [SerializeField] private float attackCooldown = 3f;
 
     private float attackTimer;
-    private Player target;
+    protected Player target; // Changed from private to protected
 
     protected override void Start()
     {
         base.Start();
         target = FindObjectOfType<Player>();
-        
     }
 
     private void Update()
@@ -23,9 +22,9 @@ public class Enemy : Character
         Vector2 currentPosition = transform.position;
         Vector2 direction = destination - currentPosition;
 
-        if(Vector2.Distance(destination, currentPosition) > distanceToStop)
+        if (Vector2.Distance(destination, currentPosition) > distanceToStop)
         {
-            Move(direction.normalized);          
+            Move(direction.normalized);
         }
         else
         {
@@ -39,7 +38,7 @@ public class Enemy : Character
     {
         base.Attack();
 
-        if(attackTimer >= attackCooldown)
+        if (attackTimer >= attackCooldown)
         {
             target.healthValue.DecreaseHealth(1);
             attackTimer = 0;
@@ -48,7 +47,6 @@ public class Enemy : Character
         {
             attackTimer += Time.deltaTime;
         }
-        
     }
 
     public override void PlayDeadEffect()

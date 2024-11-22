@@ -58,27 +58,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4606214303545869301, guid: fdc4845f20e84d44da2f950af0136980, type: 3}
       propertyPath: m_Color.b
-      value: 0.216981
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4606214303545869301, guid: fdc4845f20e84d44da2f950af0136980, type: 3}
       propertyPath: m_Color.g
-      value: 0.216981
+      value: 0.7798742
       objectReference: {fileID: 0}
     - target: {fileID: 4606214303545869301, guid: fdc4845f20e84d44da2f950af0136980, type: 3}
       propertyPath: m_Color.r
-      value: 1
+      value: 0.1363952
+      objectReference: {fileID: 0}
+    - target: {fileID: 5416033022067755224, guid: fdc4845f20e84d44da2f950af0136980, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.9148392
+      objectReference: {fileID: 0}
+    - target: {fileID: 5416033022067755224, guid: fdc4845f20e84d44da2f950af0136980, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.9148392
+      objectReference: {fileID: 0}
+    - target: {fileID: 5416033022067755224, guid: fdc4845f20e84d44da2f950af0136980, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.9148392
+      objectReference: {fileID: 0}
+    - target: {fileID: 5416033022067755224, guid: fdc4845f20e84d44da2f950af0136980, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.337
       objectReference: {fileID: 0}
     - target: {fileID: 8500794465988436132, guid: fdc4845f20e84d44da2f950af0136980, type: 3}
       propertyPath: m_Color.b
-      value: 0.045113944
-      objectReference: {fileID: 0}
-    - target: {fileID: 8500794465988436132, guid: fdc4845f20e84d44da2f950af0136980, type: 3}
-      propertyPath: m_Color.g
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8500794465988436132, guid: fdc4845f20e84d44da2f950af0136980, type: 3}
+      propertyPath: m_Color.g
+      value: 0.38326314
+      objectReference: {fileID: 0}
+    - target: {fileID: 8500794465988436132, guid: fdc4845f20e84d44da2f950af0136980, type: 3}
       propertyPath: m_Color.r
-      value: 0.57232696
+      value: 0.8301887
       objectReference: {fileID: 0}
     - target: {fileID: 8500794465988436132, guid: fdc4845f20e84d44da2f950af0136980, type: 3}
       propertyPath: m_SortingOrder
@@ -115,4 +131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myRigidbody: {fileID: 3576040712213611694}
-  movementSpeed: 10
+  movementSpeed: 20
+  currentWeapon: {fileID: 11400000, guid: 56bc9408a1dca0c4eab512d17c7c0651, type: 2}
+  distanceToStop: 5
+  attackCooldown: 1
