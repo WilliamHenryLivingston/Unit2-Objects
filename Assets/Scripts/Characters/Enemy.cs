@@ -4,9 +4,11 @@ public class Enemy : Character
 {
     [SerializeField] public float distanceToStop = 2f;
     [SerializeField] private float attackCooldown = 3f;
+    [SerializeField] protected float damage = 1f; //added so that I can change the damage that each enemy can deal
+   
 
     private float attackTimer;
-    protected Player target; // Changed from private to protected
+    protected Player target; // private to protected, allows me to create a new enemy
 
     protected override void Start()
     {
@@ -40,7 +42,7 @@ public class Enemy : Character
 
         if (attackTimer >= attackCooldown)
         {
-            target.healthValue.DecreaseHealth(1);
+            target.healthValue.DecreaseHealth(damage);
             attackTimer = 0;
         }
         else

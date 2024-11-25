@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 269822684829561286, guid: fdc4845f20e84d44da2f950af0136980, type: 3}
       propertyPath: m_Name
-      value: EnemyShotgun
+      value: Fastweaksniper
       objectReference: {fileID: 0}
     - target: {fileID: 269822684829561286, guid: fdc4845f20e84d44da2f950af0136980, type: 3}
       propertyPath: m_TagString
@@ -135,3 +135,4 @@ MonoBehaviour:
   currentWeapon: {fileID: 11400000, guid: 56bc9408a1dca0c4eab512d17c7c0651, type: 2}
   distanceToStop: 5
   attackCooldown: 1
+  damage: 1

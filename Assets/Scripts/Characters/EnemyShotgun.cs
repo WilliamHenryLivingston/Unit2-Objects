@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
-public class EnemyShotgun : Enemy
+public class fastweaksniper : Enemy
 {
     
   
     protected override void Start()
     {
+      
+        damage = 3f;
         base.Start();
   
     }
