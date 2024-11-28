@@ -3,19 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
-public class fastweaksniper : Enemy
+public class SlowTank : Enemy
 {
     
-  
     protected override void Start()
     {
-        healthValue = new Health(30);
-        damage = 3f;
+        healthValue = new Health(70);
+        damage = 10f;
         base.Start();
-  
+
     }
 
-    private void Update()
+    void Update()
     {
         if (!target) return;
 

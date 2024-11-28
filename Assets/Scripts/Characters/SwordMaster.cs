@@ -1,21 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
 
-public class fastweaksniper : Enemy
+public class SwordMaster : Enemy
 {
-    
-  
+
     protected override void Start()
     {
-        healthValue = new Health(30);
-        damage = 3f;
+        healthValue = new Health(31); //I moved this from character into each of these classes 
+        damage = 15f;
         base.Start();
-  
+
     }
 
-    private void Update()
+
+    void Update()
     {
         if (!target) return;
 
@@ -33,6 +32,7 @@ public class fastweaksniper : Enemy
         }
 
         Look(direction.normalized);
+
     }
 
     public override void Attack()
