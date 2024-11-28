@@ -26,14 +26,14 @@ public class GameManager : MonoBehaviour
     private Enemy SpawnEnemy()
     {
         int randomSpawnIndex = Random.Range(0, spawnPointsArray.Length);
-        Transform randomSpawnPoint = spawnPointsArray[randomSpawnIndex];
+        Transform randomSpawnPoint = spawnPointsArray[randomSpawnIndex]; 
 
         int randomEnemyIndex = Random.Range(0, enemyPrefabs.Length);
-        Enemy selectedEnemyPrefab = enemyPrefabs[randomEnemyIndex];
+        Enemy selectedEnemyPrefab = enemyPrefabs[randomEnemyIndex]; //changed some keywords to fit
 
 
         Enemy enemyClone = Instantiate(selectedEnemyPrefab, randomSpawnPoint.position, randomSpawnPoint.rotation);
-        listOfAllEnemiesAlive.Add(enemyClone); //changed some keywords to fit
+        listOfAllEnemiesAlive.Add(enemyClone); 
        
         
         return enemyClone;
