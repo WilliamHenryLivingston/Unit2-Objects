@@ -87,6 +87,50 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1998525839259345132, guid: fdc4845f20e84d44da2f950af0136980, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1998525839259345132, guid: fdc4845f20e84d44da2f950af0136980, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1998525839259345132, guid: fdc4845f20e84d44da2f950af0136980, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 4606214303545869301, guid: fdc4845f20e84d44da2f950af0136980, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e48dc48182ee2244ea084c424169eea6, type: 3}
+    - target: {fileID: 5416033022067755224, guid: fdc4845f20e84d44da2f950af0136980, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.001638174
+      objectReference: {fileID: 0}
+    - target: {fileID: 5416033022067755224, guid: fdc4845f20e84d44da2f950af0136980, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.405
+      objectReference: {fileID: 0}
+    - target: {fileID: 5416033022067755224, guid: fdc4845f20e84d44da2f950af0136980, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5416033022067755224, guid: fdc4845f20e84d44da2f950af0136980, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5416033022067755224, guid: fdc4845f20e84d44da2f950af0136980, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5416033022067755224, guid: fdc4845f20e84d44da2f950af0136980, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5416033022067755224, guid: fdc4845f20e84d44da2f950af0136980, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -180
+      objectReference: {fileID: 0}
     - target: {fileID: 6028044763770357788, guid: fdc4845f20e84d44da2f950af0136980, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
@@ -99,6 +143,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8500794465988436132, guid: fdc4845f20e84d44da2f950af0136980, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 025d11ee835aad343a92de780ea2a8d9, type: 3}
     - target: {fileID: 8500794465988436132, guid: fdc4845f20e84d44da2f950af0136980, type: 3}
       propertyPath: m_SortingLayer
       value: 1
@@ -142,9 +190,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6db41d899dba9ff40bf5c1d9e453e3a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 30
   myRigidbody: {fileID: 6790942228521752844}
   movementSpeed: 30
-  currentWeapon: {fileID: 0}
+  dieEffect: {fileID: 0}
+  currentWeapon: {fileID: 11400000, guid: 33e4c280e282fe542a761c5364d4e013, type: 2}
   playerWeaponTip: {fileID: 4496710596137927006}
 --- !u!114 &5276857081278695118
 MonoBehaviour:

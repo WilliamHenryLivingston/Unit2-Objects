@@ -114,7 +114,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e198c3f356961284ebf03567039f33a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 1
   myRigidbody: {fileID: 3576040712213611694}
   movementSpeed: 7
+  dieEffect: {fileID: 725748389856807714, guid: 4bda94453d2ca7444a0fff05b2d425f5, type: 3}
+  currentWeapon: {fileID: 0}
   distanceToStop: 3
   attackCooldown: 3
+  damage: 1
