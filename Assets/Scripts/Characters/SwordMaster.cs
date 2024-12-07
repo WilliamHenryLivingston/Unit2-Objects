@@ -39,4 +39,10 @@ public class SwordMaster : Enemy
     {
         base.Attack();
     }
+
+    public override void PlayDeadEffect()
+    {
+        DropPowerUp();
+        base.PlayDeadEffect();
+    }
 }

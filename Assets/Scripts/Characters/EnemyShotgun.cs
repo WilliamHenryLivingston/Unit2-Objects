@@ -39,4 +39,12 @@ public class fastweaksniper : Enemy
     {
         base.Attack();
     }
+
+    public override void PlayDeadEffect()
+    {
+
+        DropPowerUp();
+
+        base.PlayDeadEffect();
+    }
 }

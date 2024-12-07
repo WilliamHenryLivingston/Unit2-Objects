@@ -4,9 +4,10 @@ public class Character : MonoBehaviour
 {
     [SerializeField] private float health = 2f;
     [SerializeField] private Rigidbody2D myRigidbody;
-    [SerializeField] private float movementSpeed = 10f;
+    [SerializeField] public float movementSpeed = 10f;
 
     [SerializeField] private GameObject dieEffect;
+
 
     public Health healthValue;
     public Weapon currentWeapon;

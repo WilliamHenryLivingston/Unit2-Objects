@@ -210,3 +210,6 @@ MonoBehaviour:
   distanceToStop: 2
   attackCooldown: 1
   damage: 1
+  powerUpPrefabs:
+  - {fileID: 5980221739913260268, guid: 91c989df8d1227146b0a48100cce1549, type: 3}
+  - {fileID: 3941629574508999126, guid: 4f60259e8900d2248ba49689a1bef014, type: 3}

@@ -3,6 +3,7 @@ public class Player : Character
 {
     [SerializeField] private Transform playerWeaponTip;
 
+
     protected override void Start()
     {
         healthValue = new Health(50);
@@ -16,5 +17,9 @@ public class Player : Character
         currentWeapon.Shoot(playerWeaponTip);
     }
 
+    public Health GetHealth()
+    {
+        return healthValue;
+    }
 
 }
